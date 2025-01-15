@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <!-- Home Page Content -->
+        <div id="home-page" class="page active">
+            <nav>
+                <div class="logo">Project Finder</div>
+                <div class="nav-links">
+                    <button id="darkModeToggle">Dark Mode</button>
+                    <a href="#" onclick="showPage('home-page')">Home</a>
+                    <a href="#" onclick="showPage('project-hub')">Project Hub</a>
+                    <a href="https://www.instagram.com/arya.bugs/" target="_blank">Instagram</a>
+                </div>
+            </nav>
+
+            <main>
+                <section class="hero">
+                    <h1>Welcome to Project Connect Forum</h1>
+                    <p>Your one-stop platform to discover and join extracurricular projects.</p>
+                    <button class="cta-button" onclick="showPage('project-hub')">Go to Project Hub</button>
+                </section>
+
+                <section class="about">
+                    <h2>About the Website</h2>
+                    <p>Project Finder is an innovative platform designed specifically for high school and middle school students, welcoming individuals from all backgrounds. The website provides a space for both juniors and seniors to discover or create passion projects. It encourages students to explore a range of extracurricular opportunities, develop leadership skills, and pursue their interests. With an emphasis on personal growth and community involvement, Project Finder aims to empower teens to take charge of their futures by joining or starting projects that ignite their passions.</p>
+                </section>
+
+                <section class="founder">
+                    <h2>Website Founder</h2>
+                    <p>Maryam Nawaz is the founder of Project Finder, an initiative she created with a team of five talented individuals. Based in Lahore, Pakistan, Maryam is a passionate advocate for empowering teens through extracurriculars. Her platform offers students a chance to explore their interests, collaborate with others, and develop skills that will help them in their academic and personal lives. Maryam's goal is to foster a supportive environment where students can take the lead on projects that matter most to them.</p>
+                </section>
+            </main>
+        </div>
+
+        <!-- Project Hub Content -->
+        <div id="project-hub" class="page">
+            <nav>
+                <div class="logo">Project Finder</div>
+                <div class="nav-links">
+                    <button id="darkModeToggle2">Dark Mode</button>
+                    <a href="#" onclick="showPage('home-page')">Home</a>
+                    <a href="#" onclick="showPage('project-hub')">Project Hub</a>
+                    <a href="https://www.instagram.com/arya.bugs/" target="_blank">Instagram</a>
+                </div>
+            </nav>
+
+            <main>
+                <section class="projects-header">
+                    <h1>Projects</h1>
+                    <p>Create Your Passion Project and Share with the Community!</p>
+                    <button id="addProjectBtn" class="cta-button">Add Project</button>
+                </section>
+
+                <section class="project-hub">
+                    <h2>Project Hub</h2>
+                    <p>Explore various extracurricular projects and join the ones that interest you!</p>
+                    
+                    <div id="projectsList" class="projects-grid">
+                        <!-- Projects will be dynamically loaded here -->
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>Reach us at <a href="mailto:welovecode.fr@outlook.com">welovecode.fr@outlook.com</a> or visit our <a href="https://www.instagram.com/arya.bugs/" target="_blank">Instagram</a></p>
+    </footer>
+</body>
+</html>
